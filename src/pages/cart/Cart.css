@@ -1,0 +1,138 @@
+.cart {
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  width: 80%;
+  margin: auto;
+}
+
+.table {
+    width: 100%;
+    width: 100%;
+    margin: auto;
+    margin-top: 0px;
+    border-spacing: 0;
+}
+
+tbody {
+    background-color: #efefef;
+}
+
+
+th{
+  background-color: #f2f2f2;
+  padding: 15px;
+  text-align: left;
+}
+
+tr {
+  &:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+}
+
+td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.quantity-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+
+.quantity-button {
+  color: #040404;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ffffff;
+  }
+}
+
+.total-price-wapper {
+    width: 40%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clear-cart-button{
+    margin-top: 10px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #bd2130;
+  }
+}
+
+.space-between {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+hr {
+    width: 100%;
+}
+
+.clear-all{
+    border: none;
+    background-color: #f5f5f5;
+
+    &:hover {
+        border-bottom: 1px black solid;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 800px) {
+    .cart {
+    display: block;
+      flex-direction: row;
+      align-items: center;
+      padding: 20px;
+      font-family: 'Arial', sans-serif;
+      width: 92%;
+      margin: auto;
+    }
+
+    .table {
+      width: 100%;
+      margin-bottom: 20px;
+      border-spacing: 0;
+    }
+
+
+    .total-price-wapper {
+        width: 90%;
+      padding: 20px;
+      border: 1px solid #ddd;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+  }
